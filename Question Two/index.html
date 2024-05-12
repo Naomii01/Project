@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>STUDENT REGISTRATION FORM</h1>
+<form id="registrationForm" action="process_form.php" method="post">
+  <label for="firstName">First Name
+  <input type="text" id="firstName" name="firstName"><br>
+</label>
+<br>
+<span></span>
+  <label for="lastName">Last Name
+  <input type="text" id="lastName" name="lastName"><br>
+</label>
+<br>
+<span></span>
+  <label>Date of Birth
+  <select name="day" id="daySelect">
+    <option value="" disabled selected>Day:</option>
+  </select>
+  <select name="month" id="monthSelect">
+    <option value="" disabled selected>Month:</option>
+  </select>
+  <select name="year" id="yearSelect">
+    <option value="" disabled selected>Year:</option>
+  </select><br>
+</label>
+<br>
+<span></span>
+  <label for="email">Email ID
+  <input type="email" id="email" name="email"><br>
+</label>
+  <label for="mobile">Mobile Number
+  <input type="text" id="mobile" name="mobile"><br>
+</label>
+<span></span>
+<div class="horizontal-gender">
+  <label for="gender">Gender</label>
+  <div class="gender-options">
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+  </div>
+</div>
+<br>
+
+<div class="horizontal-address">
+  <label for="address">Address</label>
+  <textarea id="address" name="address" rows="4" cols="20"></textarea>
+</div>
+<br>
+
+  <label for="city">City
+  <input type="text" id="city" name="city"><br>
+</label>
+<br>
+  <label for="pincode">Pincode
+  <input type="text" id="pincode" name="pincode"><br>
+</label>
+<br>
+  <label for="state">State
+  <input type="text" id="state" name="state"><br>
+</label>
+ <br>
+ <div class="horizontal-country">
+  <label for="country">Country</label>
+  <select id="country" name="country">
+    <option value="" disabled selected>Select Country</option>
+  </select>
+</div>
+
+
+
+
+<div class="horizontal-hobbies">
+  <label for="hobbies">Hobbies</label>
+  <div class="hobby-checkboxes">
+    <input type="checkbox" id="drawing" name="hobbies[]" value="Drawing">
+    <label for="drawing">Drawing</label>
+    <input type="checkbox" id="singing" name="hobbies[]" value="Singing">
+    <label for="singing">Singing</label>
+    <input type="checkbox" id="dancing" name="hobbies[]" value="Dancing">
+    <label for="dancing">Dancing</label>
+    <input type="checkbox" id="sketching" name="hobbies[]" value="Sketching">
+    <label for="sketching">Sketching</label>
+    <input type="checkbox" id="other" name="hobbies[]" value="Other">
+    <label for="other">Others</label>
+  </div>
+  <input type="text" id="otherText" name="otherText">
+</span>
+</div>
+
+  <label>Qualification:
+    <table border="1">
+      <tr>
+        <th>SL No.</th>
+        <th>Examination</th>
+        <th>Board</th>
+        <th>Percentage</th>
+        <th>Year of Passing</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Class X</td>
+        <td><input type="text" name="classXBoard"></td>
+        <td><input type="text" name="classXPercentage"></td>
+        <td><input type="text" name="classXYear"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Class XII</td>
+        <td><input type="text" name="classXIIBoard"></td>
+        <td><input type="text" name="classXIIPercentage"></td>
+        <td><input type="text" name="classXIIYear"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Graduation</td>
+        <td><input type="text" name="graduationBoard"></td>
+        <td><input type="text" name="graduationPercentage"></td>
+        <td><input type="text" name="graduationYear"></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Master</td>
+        <td><input type="text" name="masterBoard"></td>
+        <td><input type="text" name="masterPercentage"></td>
+        <td><input type="text" name="masterYear"></td>
+      </tr>
+    </table><br>
+  </label>
+    
+  
+  <div class="horizontal-courses">
+    <label>Courses Applied For:</label>
+    <input type="radio" id="bcs" name="courses" value="BCS">
+    <label for="bcs">BCS</label>
+    <input type="radio" id="bcom" name="courses" value="B.Com">
+    <label for="bcom">B.Com</label>
+    <input type="radio" id="bsc" name="courses" value="Bsc">
+    <label for="bsc">Bsc</label>
+    <input type="radio" id="ba" name="courses" value="BA">
+    <label for="ba">BA</label>
+  </div>
+  <br>
+  <div class="button-container">
+  <button type="submit" class="medium-button">Submit</button>
+  <button type="reset" class="medium-button">Reset</button>
+</div>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

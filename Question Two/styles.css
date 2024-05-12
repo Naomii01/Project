@@ -1,0 +1,132 @@
+
+* {
+    font-family: Footlight MT Light, Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 250px;
+}
+
+
+select[name="year"],
+select[name="month"],
+select[name="day"] {
+    width: 100px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+.horizontal-gender {
+    display: flex;
+    align-items: center;
+  }
+  
+  .horizontal-gender label {
+    margin-right: 10px;  
+  }
+  
+  .horizontal-gender .gender-options {
+    display: flex;
+    align-items: center;
+  }
+  
+  .horizontal-gender .gender-options input[type="radio"] {
+    margin-right: 5px; 
+  }
+  
+  .horizontal-address {
+    display: flex;
+    align-items: center;
+  }
+  
+  .horizontal-address label {
+    margin-right: 10px;
+  }
+  
+  .horizontal-address textarea {
+    width: 150px; 
+  }
+  .horizontal-country {
+    display: flex;
+    align-items: center;
+  }
+  
+  .horizontal-country label {
+    margin-right: 10px; 
+  }
+  
+  .horizontal-country input[type="text"] {
+    width: 150px; 
+  }
+  .horizontal-hobbies {
+    display: flex;
+    align-items: center;
+  }
+  
+  .horizontal-hobbies label {
+    margin-right: 10px; 
+  }
+  
+  .horizontal-hobbies .hobby-checkboxes {
+    display: flex;
+    align-items: center;
+  }
+  
+  .horizontal-hobbies input[type="checkbox"] {
+    margin-right: 5px; 
+  }
+  
+  .horizontal-hobbies input[type="text"] {
+    width: 150px;
+  }
+  .horizontal-courses {
+    display: flex;
+    align-items: center;
+  }
+  
+  .horizontal-courses label {
+    margin-right: 10px; 
+  }
+  
+  .horizontal-courses input[type="radio"] {
+    margin-right: 5px; 
+  }
+  .medium-button {
+    padding: 6px 12px; 
+    font-size: 12px; 
+    cursor: pointer; 
+    border: none; 
+    background-color: #e0e9e4; 
+    color: #000000;
+    border-radius: 4px; 
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+ 
+  

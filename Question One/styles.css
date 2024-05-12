@@ -1,0 +1,36 @@
+
+.navbar {
+    background-color: blue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-btn {
+    border-radius: 5px; 
+    padding: 5px 10px; 
+}
+
+.sidebar {
+    background-color: yellow;
+    padding: 20px;
+    width: 200px;
+    height: 100vh;
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+}
+
+
+.title {
+    text-align: center;
+}
+
+
+.content {
+    background-color: white;
+  
+    padding: 20px;
+
+    margin-left:220px ;
+}
